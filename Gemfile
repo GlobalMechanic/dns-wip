@@ -7,6 +7,16 @@ gem 'rails', '3.2.12'
 
 gem 'pg'
 
+<<<<<<< HEAD
+=======
+# Auth
+gem 'devise'
+
+# Models
+gem 'inherited_resources'
+gem 'carrierwave'
+gem "fog", "~> 1.3.1"
+>>>>>>> b2c6a1104b28812fdc2802a26b414e0a55d8adfa
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +28,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+<<<<<<< HEAD
+=======
+  gem 'jquery-fileupload-rails'
+>>>>>>> b2c6a1104b28812fdc2802a26b414e0a55d8adfa
 end
 
 gem 'jquery-rails'
