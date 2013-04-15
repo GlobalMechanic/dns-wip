@@ -1304,3 +1304,438 @@ LINE 5:              WHERE a.attrelid = '"pages"'::regclass
   Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
   Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
   Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:24:25 -0700
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 10:24:35 -0700
+Processing by PagesController#index as HTML
+PG::Error: ERROR:  relation "pages" does not exist
+LINE 5:              WHERE a.attrelid = '"pages"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"pages"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 28ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "pages" does not exist
+LINE 5:              WHERE a.attrelid = '"pages"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"pages"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 10:26:36 -0700
+Processing by PagesController#index as HTML
+PG::Error: ERROR:  relation "pages" does not exist
+LINE 5:              WHERE a.attrelid = '"pages"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"pages"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "pages" does not exist
+LINE 5:              WHERE a.attrelid = '"pages"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"pages"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-04-15 10:32:08 -0700
+Processing by PostsController#index as HTML
+PG::Error: ERROR:  relation "posts" does not exist
+LINE 5:              WHERE a.attrelid = '"posts"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"posts"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (PG::Error: ERROR:  relation "posts" does not exist
+LINE 5:              WHERE a.attrelid = '"posts"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"posts"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @posts.each do |post| %>
+    13:   <tr>
+    14:     <td><%= post.title %></td>
+    15:     <td><%= post.body %></td>
+  app/views/posts/index.html.erb:12:in `_app_views_posts_index_html_erb__1743980588465399477_70310073194980'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.5ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePages (20130411201039)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePages (20130411201039)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (24.9ms)[0m  [1mCREATE TABLE "pages" ("id" serial primary key, "title" character varying(255), "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130411201039')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-04-15 10:41:32 -0700
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Processing by PagesController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Compiled layout.css  (7ms)  (pid 78585)
+Compiled forms.css  (0ms)  (pid 78585)
+Compiled assets.css  (1ms)  (pid 78585)
+Compiled pages.css  (1ms)  (pid 78585)
+Compiled states.css  (1ms)  (pid 78585)
+Compiled application.css  (81ms)  (pid 78585)
+Compiled jquery.js  (2ms)  (pid 78585)
+Compiled jquery_ujs.js  (0ms)  (pid 78585)
+Compiled assets.js  (0ms)  (pid 78585)
+Compiled pages.js  (0ms)  (pid 78585)
+Compiled application.js  (127ms)  (pid 78585)
+Completed 200 OK in 345ms (Views: 334.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /states.css - 200 OK (1ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /forms.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /assets.css - 200 OK (2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /layout.css - 200 OK (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /assets.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:41:36 -0700
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-15 10:41:42 -0700
+Processing by PagesController#new as HTML
+  Rendered pages/_form.html.erb (11.7ms)
+  Rendered pages/new.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `body' for #<Page:0x007fe4aa50ea38>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :body %><br />
+    20:     <%= f.text_area :body %>
+    21:   </div>
+    22:   <div class="actions">
+    23:     <%= f.submit %>
+  app/views/pages/_form.html.erb:20:in `block in _app_views_pages__form_html_erb___1670456165751187704_70310062214340'
+  app/views/pages/_form.html.erb:1:in `_app_views_pages__form_html_erb___1670456165751187704_70310062214340'
+  app/views/pages/new.html.erb:3:in `_app_views_pages_new_html_erb___1008598407910281829_70310042104860'
+  app/controllers/pages_controller.rb:29:in `new'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Processing by PagesController#new as HTML
+  Rendered pages/_form.html.erb (2.5ms)
+  Rendered pages/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:45:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages" for 127.0.0.1 at 2013-04-15 10:45:22 -0700
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "page"=>{"title"=>"Page test", "description"=>"stuff here"}, "commit"=>"Create Page"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `repond_to' for #<PagesController:0x007fe4ad9d0ff0>):
+  app/controllers/pages_controller.rb:45:in `create'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.2ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.3ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:07 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Processing by PagesController#new as HTML
+  Rendered pages/_form.html.erb (1.6ms)
+  Rendered pages/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:48:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
