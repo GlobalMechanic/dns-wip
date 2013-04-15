@@ -40,9 +40,9 @@ class PagesController < ApplicationController
 	# POST /pages
 	# POST /pages.json
 	def create
-		@page = Page.new(params[:post])
+		@page = Page.new(params[:page])
 
-		repond_to do |format|
+		respond_to do |format|
 			if @page.save
 				format.html { redirect_to @page, notice: 'Boom, page created.' }
 				format.json { render json: @page, status: :created, location: @page }
