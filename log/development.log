@@ -2891,3 +2891,3033 @@ Served asset /pages.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:05 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:07:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered pages/_form.html.erb (2.1ms)
+  Rendered pages/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Processing by PagesController#new as HTML
+  Rendered pages/_form.html.erb (1.7ms)
+  Rendered pages/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pages" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "page"=>{"title"=>"Test page 2", "description"=>"yep"}, "commit"=>"Create Page"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "pages" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Mon, 15 Apr 2013 18:08:21 UTC +00:00], ["description", "yep"], ["title", "Test page 2"], ["updated_at", Mon, 15 Apr 2013 18:08:21 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pages/2
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/pages/2" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered pages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/2" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:08:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/2" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/2/edit" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered pages/_form.html.erb (2.1ms)
+  Rendered pages/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/pages/2" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Processing by PagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "id"=>"2"}
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "pages" WHERE "pages"."id" = $1[0m  [["id", 2]]
+  [1m[35m (6.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 13ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Processing by PagesController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:09:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 11:16:34 -0700
+Served asset / - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/chetwoodside/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 11:17:11 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/assets_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 11:44:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 11:44:59 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#index as HTML
+PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/assets_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Processing by PagesController#index as HTML
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  Rendered pages/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 45ms (Views: 18.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered pages/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:33:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:37:57 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/assets_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:38:02 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#index as HTML
+PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "assets" does not exist
+LINE 5:              WHERE a.attrelid = '"assets"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"assets"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  app/controllers/assets_controller.rb:5:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePages (20130411201039)
+Migrating to CreateAssets (20130415233707)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (11.4ms)[0m  [1mCREATE TABLE "assets" ("id" serial primary key, "title" character varying(255), "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130415233707')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:39:53 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.5ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template assets/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/chetwoodside/Documents/repos/wip/app/views"
+  * "/Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.3/app/views"
+):
+  app/controllers/assets_controller.rb:7:in `index'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[35mAsset Load (0.4ms)[0m  SELECT "assets".* FROM "assets" 
+  Rendered assets/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /pages.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/new" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /new - 404 Not Found (2ms)
+Processing by AssetsController#new as HTML
+  Rendered assets/_form.html.erb (3.4ms)
+  Rendered assets/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/assets" for 127.0.0.1 at 2013-04-15 16:44:34 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"New asset test", "description"=>"go"}, "commit"=>"Create Asset"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "assets" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Mon, 15 Apr 2013 23:44:34 UTC +00:00], ["description", nil], ["title", nil], ["updated_at", Mon, 15 Apr 2013 23:44:34 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/assets/1
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/1" for 127.0.0.1 at 2013-04-15 16:44:34 -0700
+Served asset /1 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `asset' for #<AssetsController:0x007fe4adfc7b48>):
+  app/controllers/assets_controller.rb:16:in `show'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started POST "/assets" for 127.0.0.1 at 2013-04-15 16:47:58 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"New asset test", "description"=>"go"}, "commit"=>"Create Asset"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "assets" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Mon, 15 Apr 2013 23:47:58 UTC +00:00], ["description", nil], ["title", nil], ["updated_at", Mon, 15 Apr 2013 23:47:58 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/assets/2
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:47:58 -0700
+Served asset /2 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `asset' for #<AssetsController:0x007fe4aa5f86d8>):
+  app/controllers/assets_controller.rb:16:in `show'
+
+
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/chetwoodside/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /2 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAsset Load (0.5ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered assets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 6.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/2/edit" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /2/edit - 404 Not Found (3ms)
+Processing by AssetsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAsset Load (0.5ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered assets/_form.html.erb (2.3ms)
+  Rendered assets/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:48:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/assets/2" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /2 - 404 Not Found (4ms)
+Processing by AssetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"New asset test", "description"=>"Asset test"}, "commit"=>"Update Asset", "id"=>"2"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/assets/2
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /2 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAsset Load (0.5ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /2 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAsset Load (0.5ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered assets/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /2 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAsset Load (0.4ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:12 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/2" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /2 - 404 Not Found (4ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#index as HTML
+  [1m[35mAsset Load (0.7ms)[0m  SELECT "assets".* FROM "assets" 
+  Rendered assets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:49:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /1 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAsset Load (0.5ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1/edit" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /1/edit - 404 Not Found (3ms)
+Processing by AssetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered assets/_form.html.erb (2.5ms)
+  Rendered assets/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.5ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/new" for 127.0.0.1 at 2013-04-15 16:50:45 -0700
+Served asset /new - 404 Not Found (3ms)
+Processing by AssetsController#new as HTML
+  Rendered assets/_form.html.erb (2.3ms)
+  Rendered assets/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/assets" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"test asset", "description"=>"go"}, "commit"=>"Create Asset"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "assets" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Mon, 15 Apr 2013 23:50:53 UTC +00:00], ["description", nil], ["title", nil], ["updated_at", Mon, 15 Apr 2013 23:50:53 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/assets/3
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/3" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /3 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:50:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/3" for 127.0.0.1 at 2013-04-15 16:54:38 -0700
+Served asset /3 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered assets/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 5.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:38 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:38 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:38 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/3" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /3 - 404 Not Found (3ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:54:42 -0700
+Served asset / - 404 Not Found (3ms)
+Processing by AssetsController#index as HTML
+  [1m[35mAsset Load (0.5ms)[0m  SELECT "assets".* FROM "assets" 
+  Rendered assets/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1/edit" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /1/edit - 404 Not Found (4ms)
+Processing by AssetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAsset Load (0.6ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered assets/_form.html.erb (1.8ms)
+  Rendered assets/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:46 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/assets/1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /1 - 404 Not Found (4ms)
+Processing by AssetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"Test", "description"=>"go"}, "commit"=>"Update Asset", "id"=>"1"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/assets/1
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /1 - 404 Not Found (4ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAsset Load (0.5ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /1 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1/edit" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /1/edit - 404 Not Found (32ms)
+Processing by AssetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered assets/_form.html.erb (1.8ms)
+  Rendered assets/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:54:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/assets/1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /1 - 404 Not Found (3ms)
+Processing by AssetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"Test asset", "description"=>"test"}, "commit"=>"Update Asset", "id"=>"1"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/assets/1
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /1 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAsset Load (0.5ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered assets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/assets/1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /1 - 404 Not Found (2ms)
+Processing by AssetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "id"=>"1"}
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "assets" WHERE "assets"."id" = $1  [["id", 1]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 11ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 9.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/assets/2" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /2 - 404 Not Found (4ms)
+Processing by AssetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "id"=>"2"}
+  [1m[35mAsset Load (0.6ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "assets" WHERE "assets"."id" = $1  [["id", 2]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 11ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/assets/3" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /3 - 404 Not Found (2ms)
+Processing by AssetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "id"=>"3"}
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "assets" WHERE "assets"."id" = $1  [["id", 3]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Processing by PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" 
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" [0m
+  Rendered assets/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/new" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /new - 404 Not Found (3ms)
+Processing by AssetsController#new as HTML
+  Rendered assets/_form.html.erb (1.7ms)
+  Rendered assets/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/new" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /new - 404 Not Found (4ms)
+Processing by AssetsController#new as HTML
+  Rendered assets/_form.html.erb (1.3ms)
+  Rendered assets/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/assets" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wruB/A/UXMvfHswaCbdYXifsl8HTrVK55cf4Xte4gEU=", "asset"=>{"title"=>"Test ", "description"=>"dfadf"}, "commit"=>"Create Asset"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "assets" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Mon, 15 Apr 2013 23:55:49 UTC +00:00], ["description", "dfadf"], ["title", "Test "], ["updated_at", Mon, 15 Apr 2013 23:55:49 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/assets/4
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/4" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /4 - 404 Not Found (2ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered assets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset / - 404 Not Found (2ms)
+Processing by AssetsController#index as HTML
+  [1m[35mAsset Load (0.3ms)[0m  SELECT "assets".* FROM "assets" 
+  Rendered assets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:55:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /4 - 404 Not Found (34ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered assets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4/edit" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /4/edit - 404 Not Found (3ms)
+Processing by AssetsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAsset Load (0.4ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered assets/_form.html.erb (1.8ms)
+  Rendered assets/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /4 - 404 Not Found (4ms)
+Processing by AssetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAsset Load (0.4ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered assets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/new" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /new - 404 Not Found (3ms)
+Processing by AssetsController#new as HTML
+  Rendered assets/_form.html.erb (1.5ms)
+  Rendered assets/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /states.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:56:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)

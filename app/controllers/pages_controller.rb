@@ -47,7 +47,7 @@ class PagesController < ApplicationController
 				format.html { redirect_to @page, notice: 'Boom, page created.' }
 				format.json { render json: @page, status: :created, location: @page }
 			else
-				format.html { render action: "Make new page"}
+				format.html { render action: "Create new page"}
 				format.json { render json: @page.errors, status: :unprocessable_entity }
 			end
 		end

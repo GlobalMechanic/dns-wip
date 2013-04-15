@@ -13,7 +13,7 @@ class AssetsController < ApplicationController
 	# GET /assets/1
 	# GET /assets/1.json
 	def show
-		@asset = asset.find(params[:id])
+		@asset = Asset.find(params[:id])
 
 		respond_to do |format|
 			format.html #index.html.erb
@@ -40,14 +40,14 @@ class AssetsController < ApplicationController
 	# POST /assets
 	# POST /assets.json
 	def create
-		@asset = Asset.new(params[:post])
+		@asset = Asset.new(params[:asset])
 
 		respond_to do |format|
 			if @asset.save
 				format.html { redirect_to @asset, notice: 'Boom, asset created.' }
-				format.json { head :no_content }
+				format.json { render json: @asset, status: :created, location: @asset }
 			else
-				format.html { render action: "edit" }
+				format.html { render action: "Create new asset" }
 				format.json { render json: @asset.errors, status: :unprpcessable_entity }
 			end
 		end
