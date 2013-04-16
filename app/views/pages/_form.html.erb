@@ -27,3 +27,5 @@
 <% @page.assets.each do |asset| %>
   <%= render :partial => 'assets/form', :locals => { :asset => asset } %>
 <% end %>
+
+<%= render :partial => 'assets/form', :locals => { :asset => @page.assets.new } %>
