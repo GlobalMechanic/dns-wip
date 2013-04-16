@@ -1,6 +1,5 @@
+<%= link_to 'Back', assets_path %>
 <p id="notice"><%= notice %></p>
+<%= link_to 'Edit', edit_asset_path(@asset), :class => 'btn edit-asset' %>
 
 <%= render :partial => 'shared/asset', :locals => { :asset => @asset } %>
-
-<%= link_to 'Edit', edit_asset_path(@asset) %> |
-<%= link_to 'Back', asset_path %>

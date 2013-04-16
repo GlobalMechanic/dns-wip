@@ -1,6 +1,5 @@
+<%= link_to 'Back', :back %>
 <h1>Editing asset</h1>
+<%= link_to 'View', @asset, :class => "btn show-asset" %>
 
 <%= render :partial => 'assets/form', :locals => { :asset => @asset } %>
-
-<%= link_to 'Show', @asset %> |
-<%= link_to 'Back', assets_path %>

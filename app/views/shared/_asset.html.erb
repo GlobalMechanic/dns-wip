@@ -1,9 +1,9 @@
-<p>
-  <b>Title:</b>
-  <%= asset.title %>
-</p>
+<div class="row field">
+  <%= f.label "Asset title" %>
+  <%= f.text_field :title, :placeholder => 'Add your asset title', :id => 'asset-title' %>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%= asset.description %>
-</p>
+<div class="row field">
+  <%= f.label "Asset summary" %>
+  <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
+</div>

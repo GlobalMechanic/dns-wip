@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <div class="row field">
+    <%= f.label "Asset title" %>
+    <%= f.text_field :title, :placeholder => 'Add your asset title', :id => 'asset-title' %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+  <div class="row field">
+    <%= f.label "Asset Summary" %>
+    <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
   </div>
-  <div class="field">
-    <%= f.label :page %><br />
+  <div class="row field">
+    <%= f.label "Related page" %>
     <%= f.select :page_id, Page.all.map {|x| [x.title, x.id]} %>
   </div>
-  <div class="actions">
+  <div class="row actions">
     <%= f.submit %>
   </div>
 <% end %>
