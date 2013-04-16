@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Title</th>
+    <th>Asset</th>
     <th>Description</th>
     <th></th>
     <th></th>
@@ -11,7 +11,7 @@
 
 <% @assets.each do |asset| %>
   <tr>
-    <td><%= asset.title %></td>
+    <td><%= asset.asset_url %></td>
     <td><%= asset.description %></td>
     <td><%= link_to 'Show', asset %></td>
     <td><%= link_to 'Edit', edit_asset_path(asset) %></td>

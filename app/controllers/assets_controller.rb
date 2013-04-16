@@ -44,7 +44,7 @@ class AssetsController < ApplicationController
 
 		respond_to do |format|
 			if @asset.save
-				format.html { redirect_to @asset, notice: 'Boom, asset created.' }
+				format.html { redirect_to @asset.page, notice: 'Boom, asset created.' }
 				format.json { render json: @asset, status: :created, location: @asset }
 			else
 				format.html { render action: "Create new asset" }
@@ -57,10 +57,9 @@ class AssetsController < ApplicationController
 	# PUT /assets/1.json
 	def update
 		@asset = Asset.find(params[:id])
-
 		respond_to do |format|
-			if @asset.update_attributes(params[:page])
-				format.html { redirect_to @asset, notice: 'Boom, asset updated.' }
+			if @asset.update_attributes(params[:asset])
+				format.html { redirect_to @asset.page, notice: 'Boom, asset updated.' }
 				format.json { head :no_content }
 			else
 				format.html { render action: "edit" }
