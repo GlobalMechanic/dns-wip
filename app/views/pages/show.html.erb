@@ -10,5 +10,17 @@
   <%= @page.description %>
 </p>
 
+<p>
+  <b>Assets:</b>
+  <ul>
+  <% @page.assets.each do |asset| %>
+    <li>
+      <b><%= asset.title %></b>
+      <p><%= asset.description %></p>
+    </li>
+  <% end %>
+  </ul>
+</p>
+
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Back', pages_path %>
