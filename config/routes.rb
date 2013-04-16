@@ -1,4 +1,6 @@
 Wip::Application.routes.draw do
+  root :to => "pages#index"
+
   resources :pages
 
   resources :assets
