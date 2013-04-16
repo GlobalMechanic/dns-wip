@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415233707) do
+ActiveRecord::Schema.define(:version => 20130416171039) do
 
   create_table "assets", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "page_id"
   end
 
   create_table "pages", :force => true do |t|
