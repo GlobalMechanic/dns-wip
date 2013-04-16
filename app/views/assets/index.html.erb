@@ -1,25 +1,13 @@
-<h1>Listing assets</h1>
+<h1>Wip assets</h1>
 
-<table>
-  <tr>
-    <th>Asset</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<%= link_to 'Create New Asset', new_asset_path, :class => 'btn' %>
 
+<div class="row content-list">
 <% @assets.each do |asset| %>
-  <tr>
-    <td><%= asset.asset_url %></td>
-    <td><%= asset.description %></td>
-    <td><%= link_to 'Show', asset %></td>
-    <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
-    <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <article class="entry-header">
+    <h1 class="entry-title"><%= link_to asset.asset_url, asset %></h1>
+    <p class="entry-summary"><%= asset.description %></p>
+    <p class="entry-utilities"><%= link_to 'Edit', edit_asset_path(asset) %> or <%= link_to 'destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %> this asset.</p>
+  </article>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Asset', new_asset_path %>
+</div>
