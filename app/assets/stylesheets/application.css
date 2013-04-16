@@ -11,21 +11,27 @@
 
  * Not yet known = scaffolds, and what portions of skeleton 	
  *= require_self
+ *= require skeleton
  *= require layout
  *= require forms	
- *= require assets
- *= require pages
+ *= require models
  *= require states
  */
 
 /* -------
-Fonts 
------- */
-
-/* ------- 
-Typography 
+Fonts
 ------- */
+@font-face {
+  font-family: Transit;
+  src: url("transit/TransitWebPro.eot?") format('eot'), url("transit/TransitWebPro.woff") format("woff");
+}
 
-/* ------- 
-Global settings(typography based SASS stuff)
-------- */
+@font-face {
+  font-family: Clarendon;
+  src: url("clarendon/c070002tWeb.eot?") format('eot'), url("clarendon/c070002tWeb.woff") format("woff");
+}
+@font-face {
+  font-family: Clarendon;
+  font-weight: bold;
+  src: url("clarendon/c070004tWeb.eot?") format('eot'), url("clarendon/c070004tWeb.woff") format("woff");
+}

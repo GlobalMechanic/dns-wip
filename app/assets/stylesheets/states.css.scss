@@ -1,0 +1,17 @@
+.btn,
+btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	//color: $baseHighlight;
+  font-family: inherit;
+  font-size: 1.25em;
+  text-align: center;
+  text-shadow: 0 0 rgba(255, 255, 255, .75);
+  //background: $baseFontColor;
+  border: 1px solid #000;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+
+}
