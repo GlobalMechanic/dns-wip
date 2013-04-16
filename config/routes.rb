@@ -1,7 +1,7 @@
 Wip::Application.routes.draw do
-  resources :pages, :path => '/'
 
   resources :assets
+  resources :pages, :path => '/'
 
 
   # The priority is based upon order of creation:
