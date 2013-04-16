@@ -18,7 +18,11 @@ class PagesController < ApplicationController
 		@page = Page.find(params[:id])
 
 		respond_to do |format|
-			format.html #index.html.erb
+			format.html do
+				if user_signed_in?
+					render 'pages/edit'
+				end
+			end
 			format.json { render json: @page }
 		end
 	end
