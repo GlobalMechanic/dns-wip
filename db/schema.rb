@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20130416171039) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "page_id"
   end
 
   create_table "pages", :force => true do |t|
@@ -25,7 +26,6 @@ ActiveRecord::Schema.define(:version => 20130416171039) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.integer  "page_id"
   end
 
 end

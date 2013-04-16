@@ -1,5 +1,5 @@
 class AddPageIdToAsset < ActiveRecord::Migration
   def change
-    add_column :pages, :page_id, :integer
+    add_column :assets, :page_id, :integer
   end
 end
