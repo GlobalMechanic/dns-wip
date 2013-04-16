@@ -1,4 +1,4 @@
-<%= form_for(asset) do |f| %>
+<%= form_for asset, :html => {:multipart => true} do |f| %>
   <% if asset.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(asset.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -12,8 +12,10 @@
   <% end %>
 
   <div class="row field">
-    <%= f.label "Asset title" %>
-    <%= f.text_field :title, :placeholder => 'Add your asset title', :id => 'asset-title' %>
+    <%= f.label :asset %><br />
+    <%= f.file_field :asset %>
+    <%= f.hidden_field :asset_cache %>
+    <%= asset.asset_url %>
   </div>
   <div class="row field">
     <%= f.label "Asset Summary" %>

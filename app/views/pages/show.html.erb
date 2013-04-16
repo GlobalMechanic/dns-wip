@@ -7,9 +7,6 @@
 	<%= @page.description %>
 </div>
 
-<p>
-  <% @page.assets.each do |asset| %>
-    <%= render :partial => 'shared/asset', :locals => { :asset => asset } %>
-  <% end %>
-  </ul>
-</p>
+<% @page.assets.each do |asset| %>
+  <%= render :partial => 'shared/asset', :locals => { :asset => asset } %>
+<% end %>

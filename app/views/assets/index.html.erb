@@ -5,7 +5,7 @@
 <div class="row content-list">
 <% @assets.each do |asset| %>
   <article class="entry-header">
-    <h1 class="entry-title"><%= link_to asset.title, asset %></h1>
+    <h1 class="entry-title"><%= link_to asset.asset_url, asset %></h1>
     <p class="entry-summary"><%= asset.description %></p>
     <p class="entry-utilities"><%= link_to 'Edit', edit_asset_path(asset) %> or <%= link_to 'destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %> this asset.</p>
   </article>

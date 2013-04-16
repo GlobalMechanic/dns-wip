@@ -1,7 +1,10 @@
 Wip::Application.routes.draw do
-  resources :pages, :path => '/'
+
+  devise_for :users
 
   resources :assets
+  resources :pages, :path => '/'
+  root :to => "pages#index"
 
 
   # The priority is based upon order of creation:
