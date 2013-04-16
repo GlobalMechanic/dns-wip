@@ -1,14 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @asset.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @asset.description %>
-</p>
+<%= render :partial => 'shared/asset', :locals => { :asset => @asset } %>
 
 <%= link_to 'Edit', edit_asset_path(@asset) %> |
 <%= link_to 'Back', asset_path %>

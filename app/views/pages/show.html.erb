@@ -11,13 +11,8 @@
 </p>
 
 <p>
-  <b>Assets:</b>
-  <ul>
   <% @page.assets.each do |asset| %>
-    <li>
-      <b><%= asset.title %></b>
-      <p><%= asset.description %></p>
-    </li>
+    <%= render :partial => 'shared/asset', :locals => { :asset => asset } %>
   <% end %>
   </ul>
 </p>

@@ -23,3 +23,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+<%= render :partial => 'assets/form', :locals => { :asset => @page.assets.first } %>
