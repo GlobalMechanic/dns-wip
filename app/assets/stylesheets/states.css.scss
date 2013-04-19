@@ -1,17 +1,35 @@
 .btn,
-btn,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	//color: $baseHighlight;
+  margin-bottom: 1em; 
+  padding:0.6875em 0.625em 0.6em 0.625em;
+	color: $baseHighlight;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1em;
   text-align: center;
   text-shadow: 0 0 rgba(255, 255, 255, .75);
-  //background: $baseFontColor;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $baseFontColor;
   border: 1px solid #000;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
-
+  border-radius: 0
 }
+a.btn { display: inline-block }
+div[id="container"] > .btn { margin-left: 1em; }
+
+.btn.editing-links {
+  position: relative;
+  top: -0.3em;
+  margin: 0;
+  padding: 0; 
+  font-size: 0.875em;
+  color: $baseFontColor; 
+  border: none;
+  background: rgb(255,255,255);
+}
+div[id="container"] > a.btn.create-new { float: right }
+
+.utilities a { margin-right: 1em }
