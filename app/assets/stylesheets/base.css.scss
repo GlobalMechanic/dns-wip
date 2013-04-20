@@ -5,7 +5,6 @@ Fonts
   font-family: Transit;
   src: url("transit/TransitWebPro.eot?") format('eot'), url("transit/TransitWebPro.woff") format("woff");
 }
-
 @font-face {
   font-family: Clarendon;
   src: url("clarendon/c070002tWeb.eot?") format('eot'), url("clarendon/c070002tWeb.woff") format("woff");
@@ -51,9 +50,6 @@ q:after { content: ''; content: none }
 	
 table { border-collapse: collapse; border-spacing: 0 }
 
-/* -------
-Mixins
-------- */
 $baseFontColor: rgb(55,43,45);
 $secondaryFontColor: rgb(70,64,58);
 $baseHighlight: rgb(230,223,223);
@@ -64,16 +60,12 @@ Typography
 ------- */
 body { 
 	font: 100%/1.5 Transit, sans-serif; 
-	color: $baseFontColor;
+	color: $baseFontColor; 
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%
 }
 
-h1, h2, h3, h4, h5, h6 { 
-	font-family: Clarendon;
-	font-weight: normal;
-	color: $baseFontColor; 
-}
+h1, h2, h3, h4, h5, h6 { font-family: Clarendon; font-weight: normal; color: $baseFontColor; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit }
 
 h1 { font-size: 2.25em; line-height: 1.3em; margin-bottom: 0.875em }
@@ -99,9 +91,7 @@ ol ol li, ol ul li { margin-bottom: 0.375em }
 li { line-height: 1.125em; margin-bottom: 0.75em }
 li p { line-height: 1.125em }
 
-ul + h1,
-ol + h1,
-dl + h1 { margin-top: 1em }
+ul + h1, ol + h1, dl + h1 { margin-top: 1em }
 
 /* -------
 Forms

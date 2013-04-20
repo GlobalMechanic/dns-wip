@@ -8,8 +8,11 @@ div[id="container"] { border-right: 1px solid red }
 @media screen and (min-width: 728px) {
  div[id="container"] { font-size: 1em }
 }
-@media screen and (min-width: 760px) {
- div[id="container"] { width: 47.5em }
+@media screen and (min-width: 768px) {
+ div[id="container"] { width: 48em }
+}
+@media screen and (min-width: 1024px) {
+ div[id="container"] { width: 64em }
 }
 
 h1 { margin-left: 0.5em }
@@ -26,13 +29,13 @@ input[type="email"],
 input[type="password"],
 textarea { width: 97% }
 input[type="checkbox"] { width: 2em; height: 2em }
-.checkbox-label { 
-	position: relative; 
-	top: -1.8em; 
-	left: 2em; 
-	width: 96%; 
+.checkbox-label { position: relative; top: -1.8em; left: 2em; width: 96%; }
+@media screen and (min-width: 760px) {
+	input[type="text"], 
+	input[type="email"], 
+	input[type="password"],
+	textarea { width: 43.75em }
 }
-
 
 
 

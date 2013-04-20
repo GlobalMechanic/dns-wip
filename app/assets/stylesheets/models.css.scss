@@ -1,3 +1,12 @@
+/* Logo */
+#logo { 
+	margin: 1em;
+	width: 186px;
+	height: 90px;
+	border: 1px solid grey;
+	background: url('logo_commercial_NUT_2010.png') top left no-repeat 
+}
+
 /* Content lists */
 .content-list {
 	.entry-header:nth-child(even) { background: rgb(236,237,235) }
