@@ -26,6 +26,6 @@
     <%= f.select :page_id, Page.all.map {|x| [x.title, x.id]} %>
   </div>
   <div class="row actions">
-    <%= f.submit %>
+    <%= f.submit "Add asset" %>
   </div>
 <% end %>

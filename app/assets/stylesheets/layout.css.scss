@@ -1,3 +1,7 @@
+//body { background: rgb(236,237,235) }
+
+div[id="container"] { border-right: 1px solid red }
+
 @media screen and (min-width: 727px) {
  div[id="container"] { font-size: 1.6875em }
 }
