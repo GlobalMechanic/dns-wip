@@ -1,0 +1,18 @@
+/* Logo */
+#logo { 
+	margin: 2em 1em;
+	width: 186px;
+	height: 90px;
+	text-indent: -9999em;
+	background: image-url('logo_commercial_NUT_2010.png') top left no-repeat
+}
+
+/* Content lists */
+.content-list {
+	.entry-header:nth-child(even) { background: rgb(236,237,235) }
+	.entry-summary { margin-bottom: 1em }
+	.entry-utilities { margin: 0 1em; padding-bottom: 1em }
+}
+
+/* Pages */
+textarea { height: 6.25em }
