@@ -25,24 +25,20 @@ input[type="button"] {
 }
 a.btn { display: inline-block }
 div[id="container"] > .btn { margin-left: 1em; }
-
 .primary { 
   display: inline-block;
   float: right;
   margin: 0.8em 1em 1em 0;
-  //padding-right: 1.5em;
   background: $baseFontColor;
-  //background: darken($baseHighlight, 15%);
 
   .btn { 
     margin-bottom: 0; 
     font-size: 0.75em; 
     font-weight: bold;
-    //color: lighten($baseHighlight, 45%);
-    border: none;
-    //background: darken($baseHighlight, 15%) 
+    border: none; 
   } 
 }
+.primary.forms { margin: 0.9em 1em 1em 0 }
 
 //.utilities a { margin-right: 1em }
 
