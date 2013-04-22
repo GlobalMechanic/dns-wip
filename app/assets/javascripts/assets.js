@@ -11,7 +11,10 @@ $('#new_asset').fileupload({
     //   data.context.find('.image').append(image);
     // };
     // reader.readAsDataURL(data.files[0]);
-    data.submit();
+    data.submit().success(function(result, textStatus, jqXHR) {
+      console.log('success', result);
+    });
+    console.log('add', data);
   },
   progress: function(e, data) {
     // var progress;
@@ -19,13 +22,17 @@ $('#new_asset').fileupload({
     //   progress = parseInt(data.loaded / data.total * 100, 10);
     //   data.context.find('.bar').css('width', progress + '%');
     // }
+    console.log('progress');
   },
   done: function (e, data) {
+
     // data.context.find('.progress').removeClass('active').addClass('progress-success');
     // gm.uploads.push(data);
+    console.log('done', data.result);
   },
   fail: function(e, data, three) {
     // data.context.find('.progress').remove()
     // data.context.append('<div class="alert">' + JSON.parse(data.jqXHR.responseText).asset[0] + '</div>');
+    console.log('fail', data);
   }
 });
