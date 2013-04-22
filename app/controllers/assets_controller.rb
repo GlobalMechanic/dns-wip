@@ -77,7 +77,7 @@ class AssetsController < ApplicationController
 		@asset.destroy
 
 		respond_to do |format|
-			format.html { redirect_to pages_url }
+			format.html { redirect_to @asset.page }
 			format.json { head :no_content }
 		end
 	end

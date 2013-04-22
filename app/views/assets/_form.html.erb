@@ -23,6 +23,6 @@
     <%= f.select :page_id, Page.all.map {|x| [x.title, x.id]} %>
   </div>
   <div class="row actions">
-    <%= f.submit "Update asset" %>
+    <%= f.submit "Update asset" %> <%= link_to 'destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 <% end %>
