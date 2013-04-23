@@ -130,7 +130,7 @@ select {
 	margin: 0 0 1.25em 0;
 	padding:0.6875em 0.625em 0.625em 0.625em;
 	font-size: 0.875em;
-	border: 1px solid $baseBorder; 
+	border: 1px dashed $baseBorder; 
 	background: rgb(255,255,255) 
 }
 select { width: 13.75em }
