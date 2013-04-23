@@ -13,6 +13,8 @@ $('#new_asset').fileupload({
     // reader.readAsDataURL(data.files[0]);
     data.submit().success(function(result, textStatus, jqXHR) {
       console.log('success', result);
+    }).complete(function(result, textStatus, jqXHR) {
+      console.log('complete', result);
     });
     console.log('add', data);
   },
