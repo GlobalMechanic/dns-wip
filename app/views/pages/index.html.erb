@@ -6,7 +6,7 @@
 <article class="entry-header">
   <h1 class="entry-title"><%= link_to page.title, page %></h1>
   <p class="entry-summary"><%= page.description %></p>
-  <p class="entry-utilities"><%= link_to 'Edit', edit_page_path(page) %> or <%= link_to 'destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %> this page.</p>
+  <p class="entry-utilities"><%= link_to 'Edit', edit_page_path(page) %> or <%= link_to 'delete', page, method: :delete, data: { confirm: 'Are you sure?' } %> this page.</p>
 </article>
 <% end %>
 </div>
