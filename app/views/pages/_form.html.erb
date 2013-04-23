@@ -17,10 +17,6 @@
   <div class="row field">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the page', :id => 'page-summary' %>
   </div>
-
-  <div class="row actions">
-    <%= f.submit %>
-  </div>
 <% end %>
 
 <% @page.assets.each do |asset| %>
