@@ -8,7 +8,7 @@
   <p class="entry-summary"><%= page.description %></p>
   <p class="entry-preview">
     <% page.assets.select{|asset| is_image(asset.asset_url) }.each do |asset| %>
-      <img src="<%= asset.asset_url(:thumb) %>" width="40" height="40">
+      <img src="<%= asset.asset_url(:thumb) %>" width="80" height="80">
     <% end %>
   </p>
   <p class="entry-utilities"><%= link_to 'Edit', edit_page_path(page) %> or <%= link_to 'delete', page, method: :delete, data: { confirm: 'Are you sure?' } %> this page.</p>
