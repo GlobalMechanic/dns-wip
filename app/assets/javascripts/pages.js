@@ -1,4 +1,4 @@
-$('.edit_page input, .edit_page textarea, .edit_asset input, .edit_asset textarea').bind('keyup change', function() {
+$(document).on('keyup change', '.edit_page input, .edit_page textarea, .edit_asset input, .edit_asset textarea', function() {
     // Debounce by a bit.
     var that = this;
     clearTimeout($.data(that, 'scrollTimer'));
@@ -7,7 +7,7 @@ $('.edit_page input, .edit_page textarea, .edit_asset input, .edit_asset textare
     }, 500));
 });
 
-$('.edit_page, .edit_asset').bind('submit', function() {
+$(document).on('submit', '.edit_page, .edit_asset', function() {
   $.ajax({
     url: $(this).attr('action'),
     type: 'POST',
