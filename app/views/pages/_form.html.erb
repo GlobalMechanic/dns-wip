@@ -27,4 +27,9 @@
   <%= render :partial => 'assets/form', :locals => { :asset => asset } %>
 <% end %>
 
-<%= render :partial => 'assets/form', :locals => { :asset => @page.assets.new } %>
+<%= form_for @page.assets.new, :html => {:multipart => true} do |f| %>
+  <%= f.file_field :asset %>
+  <%= f.hidden_field :asset_cache %>
+  <%= f.hidden_field :description %>
+  <%= f.hidden_field :page_id %>
+<% end %>

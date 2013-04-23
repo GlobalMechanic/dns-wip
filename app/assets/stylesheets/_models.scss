@@ -1,11 +1,14 @@
 /* Logo */
-#logo { 
+#logo {
+	display: block;
 	margin: 2em 1em;
 	width: 186px;
 	height: 90px;
 	text-indent: -9999em;
 	background: image-url('logo_commercial_NUT_2010.png') top left no-repeat
 }
+
+#new_asset { display: none; }
 
 /* Content lists */
 .content-list {

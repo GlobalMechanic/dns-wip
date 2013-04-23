@@ -2,7 +2,7 @@ $('#new_asset').fileupload({
   dataType: 'json',
   add: function(e, data) {
     data.context = $($.parseHTML('<div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div>'));
-    $('#new_asset').prepend(data.context);
+    $('#new_asset').parent().append(data.context);
     data.submit();
   },
   progress: function(e, data) {
