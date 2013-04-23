@@ -14,10 +14,10 @@
   <div class="row field">
     <img src="<%= asset.asset_url %>">
   </div>
-  <div class="row field">
+  <div class="row asset field">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
-  </div>
-  <div class="row actions">
-    <%= f.submit "Update asset" %> <%= link_to 'destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class="row actions">
+      <%= link_to 'remove asset', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
+    </div>
   </div>
 <% end %>
