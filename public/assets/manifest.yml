@@ -356,8 +356,8 @@ transit/documentation/WebFontFontUserGuide.pdf: transit/documentation/WebFontFon
 transit/documentation/WebFontFontUserGuide/index.pdf: transit/documentation/WebFontFontUserGuide-dd09c3322abbb50311d927bc627859d6.pdf
 logo_commercial_NUT_2010.png: logo_commercial_NUT_2010-8dd6345a664806608246aecd6e13d6b7.png
 logo_commercial_NUT_2010/index.png: logo_commercial_NUT_2010-8dd6345a664806608246aecd6e13d6b7.png
-application.js: application-ff617786cf4f95129088be2a710e7a76.js
-application/index.js: application-ff617786cf4f95129088be2a710e7a76.js
+application.js: application-94c7dcf9fe6380a378c4acfc9e5e0a36.js
+application/index.js: application-94c7dcf9fe6380a378c4acfc9e5e0a36.js
 application.css: application-891fe758a34b5511bc110261bf6408a6.css
 application/index.css: application-891fe758a34b5511bc110261bf6408a6.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
