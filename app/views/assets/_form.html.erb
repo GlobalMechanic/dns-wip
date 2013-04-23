@@ -13,7 +13,7 @@
 
   <div class="row field">
     <% if is_image(asset.asset_url) %>
-      <img src="<%= asset.asset_url %>">
+      <img src="<%= asset.asset_url(:display) %>">
     <% elsif is_movie(asset.asset_url) %>
       <video src="<%= asset.asset_url %>" controls>
     <% else %>
