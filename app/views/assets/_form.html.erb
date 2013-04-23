@@ -12,7 +12,13 @@
   <% end %>
 
   <div class="row field">
-    <img src="<%= asset.asset_url %>">
+    <% if is_image(asset.asset_url) %>
+      <img src="<%= asset.asset_url %>">
+    <% elsif is_movie(asset.asset_url) %>
+      <video src="<%= asset.asset_url %>" controls>
+    <% else %>
+      <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+    <% end %>
   </div>
   <div class="row asset field">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
