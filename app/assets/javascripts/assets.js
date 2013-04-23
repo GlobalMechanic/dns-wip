@@ -1,40 +1,22 @@
 $('#new_asset').fileupload({
   dataType: 'json',
   add: function(e, data) {
-    // $('body').addClass('drop');
-
-    // data.context = $($($.parseHTML(tmpl("template-upload", data.files[0]))));
-    // $('#upload-form .asset-uploads').append(data.context);
-    // var reader = new FileReader();
-    // reader.onload = function (event) {
-    //   var image = $('<img width="80">').attr('src', event.target.result);
-    //   data.context.find('.image').append(image);
-    // };
-    // reader.readAsDataURL(data.files[0]);
-    data.submit().success(function(result, textStatus, jqXHR) {
-      console.log('success', result);
-    }).complete(function(result, textStatus, jqXHR) {
-      console.log('complete', result);
-    });
-    console.log('add', data);
+    data.context = $($.parseHTML('<div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div>'));
+    $('#new_asset').prepend(data.context);
+    data.submit();
   },
   progress: function(e, data) {
-    // var progress;
-    // if (data.context) {
-    //   progress = parseInt(data.loaded / data.total * 100, 10);
-    //   data.context.find('.bar').css('width', progress + '%');
-    // }
-    console.log('progress');
+    if (data.context) {
+      progress = parseInt(data.loaded / data.total * 100, 10);
+      data.context.find('.bar').css('width', progress + '%');
+    }
   },
   done: function (e, data) {
-
-    // data.context.find('.progress').removeClass('active').addClass('progress-success');
-    // gm.uploads.push(data);
-    console.log('done', data.result);
+    // Drop in return form from rails.
+    data.context.replaceWith('<img src="' + data.result.asset.url + '">')
   },
   fail: function(e, data, three) {
-    // data.context.find('.progress').remove()
-    // data.context.append('<div class="alert">' + JSON.parse(data.jqXHR.responseText).asset[0] + '</div>');
-    console.log('fail', data);
+    data.context.find('.progress').remove()
+    data.context.parent().append('<div class="alert">' + JSON.parse(data.jqXHR.responseText).asset[0] + '</div>');
   }
 });

@@ -47,7 +47,12 @@ class AssetsController < ApplicationController
 		respond_to do |format|
 			if @asset.save
 				format.html { redirect_to @asset.page, notice: 'Boom, asset created.' }
-				format.json { render json: @asset, status: :created, location: @asset }
+				# format.json { render json: @asset, status: :created, location: @asset }
+				# @template = render(:partial => 'assets/form', :locals => { :asset => @asset })
+				# format.json { render json: @template, status: :created, location: @asset }
+				format.json { render :json => { :attachmentPartial => render_to_string(:partial => 'assets/form', :formats => [:html], :locals => { :asset => @asset }) } }
+
+
 			else
 				format.html { render action: "Create new asset" }
 				format.json { render json: @asset.errors, status: :unprpcessable_entity }
