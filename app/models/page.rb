@@ -5,6 +5,6 @@ class Page < ActiveRecord::Base
   before_create :set_hash
  
   def set_hash
-    self.slug = SecureRandom.hex 4
+    self.slug = SecureRandom.urlsafe_base64 4
   end
 end

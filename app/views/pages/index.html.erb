@@ -4,7 +4,7 @@
 <div class="row content-list">
 <% @pages.each do |page| %>
 <article class="entry-header">
-  <h1 class="entry-title"><%= link_to page.title || "Untitled #{page.id}", page %> - <span title="<%= page.created_at %>"><%= time_ago_in_words(page.created_at) %></span></h1>
+  <h1 class="entry-title"><%= link_to !page.title.blank? ? page.title : "Untitled", page %> - <span title="<%= page.created_at %>"><%= time_ago_in_words(page.created_at) %></span></h1>
   <p class="entry-summary"><%= page.description %></p>
   <p class="entry-preview">
     <% page.assets.select{|asset| is_image(asset.asset_url) }.each do |asset| %>
