@@ -2,7 +2,7 @@ $('#new_asset').fileupload({
   dataType: 'json',
   add: function(e, data) {
     data.context = $($.parseHTML('<div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div>'));
-    $('#new_asset').prepend(data.context);
+    $('#new_asset').parent().append(data.context);
     data.submit();
   },
   progress: function(e, data) {
@@ -12,8 +12,7 @@ $('#new_asset').fileupload({
     }
   },
   done: function (e, data) {
-    // Drop in return form from rails.
-    data.context.replaceWith('<img src="' + data.result.asset.url + '">')
+    data.context.replaceWith(data.result.template)
   },
   fail: function(e, data, three) {
     data.context.find('.progress').remove()

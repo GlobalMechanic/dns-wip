@@ -50,7 +50,7 @@ class AssetsController < ApplicationController
 				# format.json { render json: @asset, status: :created, location: @asset }
 				# @template = render(:partial => 'assets/form', :locals => { :asset => @asset })
 				# format.json { render json: @template, status: :created, location: @asset }
-				format.json { render :json => { :attachmentPartial => render_to_string(:partial => 'assets/form', :formats => [:html], :locals => { :asset => @asset }) } }
+				format.json { render :json => { :template => render_to_string(:partial => 'assets/form', :formats => [:html], :locals => { :asset => @asset }) } }
 
 
 			else

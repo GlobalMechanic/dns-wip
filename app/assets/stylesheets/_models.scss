@@ -1,11 +1,14 @@
 /* Logo */
-#logo { 
+#logo {
+	display: block;
 	margin: 2em 1em;
 	width: 186px;
 	height: 90px;
 	text-indent: -9999em;
 	background: image-url('logo_commercial_NUT_2010.png') top left no-repeat
 }
+
+#new_asset { display: none; }
 
 /* Content lists */
 .content-list {
@@ -38,5 +41,4 @@ textarea[id="page-summary"] { width: 94%; font-size: 1em; border: 1px dashed $ba
 @media screen and (min-width: 760px) {
 	textarea[id="page-summary"] { width: 35.4em }
 }
-
 .field img { margin-left: -1em; }

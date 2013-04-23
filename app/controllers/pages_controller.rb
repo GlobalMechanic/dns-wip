@@ -33,8 +33,13 @@ class PagesController < ApplicationController
 		@page = Page.new
 
 		respond_to do |format|
-			format.html #index.html.erb
-			format.json { render json: @page }
+			if @page.save
+				format.html { redirect_to @page, notice: 'Boom, page created.' }
+				format.json { render json: @page, status: :created, location: @page }
+			else
+				format.html { render action: "Create new page"}
+				format.json { render json: @page.errors, status: :unprocessable_entity }
+			end
 		end
 	end 
 

@@ -13,14 +13,9 @@
 
   <div class="row field">
     <img src="<%= asset.asset_url %>">
-    <%= f.file_field :asset %>
-    <%= f.hidden_field :asset_cache %>
   </div>
   <div class="row field">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
-  </div>
-  <div class="row field">
-    <%= f.select :page_id, Page.all.map {|x| [x.title, x.id]} %>
   </div>
   <div class="row actions">
     <%= f.submit "Update asset" %> <%= link_to 'destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %>
