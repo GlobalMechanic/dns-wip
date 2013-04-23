@@ -40,14 +40,13 @@ div[id="container"] > .btn { margin-left: 1em; }
 }
 .primary.forms { margin: 0.9em 1em 1em 0 }
 
-//.asset.field { position: relative }
-//.actions { 
-//  position: absolute; 
-//  top: -2.78em; 
-//  right: -0.1em;
+.asset.field .actions { 
+    position: absolute; 
+    top: 1em;
+    right: 1em; 
 
-//  .btn { font-size: 0.875em }
-//}
+    .btn { font-size: 0.875em }
+  }
 //.utilities a { margin-right: 1em }
 
 .content-list {
