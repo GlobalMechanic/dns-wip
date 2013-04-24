@@ -27,6 +27,12 @@ img { width: 100% }
 	font-size: 1em; 
 	line-height: 1.5em
 }
+.top {
+	display: block;
+	margin: 40px 0;
+	text-align: center;
+	color: $secondaryFontColor;
+}
 
 /* page: forms */
 input[id="page-title"] { 
