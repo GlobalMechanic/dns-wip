@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 class AssetUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -51,5 +52,18 @@ class AssetUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+
+  version :thumb, :if => :image? do
+    process :resize_to_fill => [80, 80]
+  end
+
+  version :display, :if => :image? do
+    process :resize_to_limit => [768, 768]
+  end
+
+  protected
+    def image?(new_file)
+      new_file.content_type.include? 'image'
+    end
 
 end

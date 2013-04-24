@@ -16,6 +16,6 @@ $('#new_asset').fileupload({
   },
   fail: function(e, data, three) {
     data.context.find('.progress').remove()
-    data.context.parent().append('<div class="alert">' + JSON.parse(data.jqXHR.responseText).asset[0] + '</div>');
+    data.context.parent().append('<div class="alert">' + data.errorThrown + '</div>');
   }
 });

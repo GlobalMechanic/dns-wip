@@ -16,6 +16,11 @@
     <img src="<%= asset.asset_url %>">
     <% elsif is_movie(asset.asset_url) %>
     <video src="<%= asset.asset_url %>" controls>
+      <img src="<%= asset.asset_url(:display) %>">
+    <% elsif is_movie(asset.asset_url) %>
+      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" width="768" height="500" data-setup='{ "preload": "auto"; "controls": true }' preload="auto" controls="controls">
+        <source src="<%= asset.asset_url %>" type="video/mp4">
+      </video>
     <% else %>
       <div class="row actions">
         <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
