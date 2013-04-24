@@ -11,18 +11,20 @@
     </div>
   <% end %>
 
-  <div class="row field">
+  <div class="row asset field">
     <% if is_image(asset.asset_url) %>
-      <img src="<%= asset.asset_url(:display) %>">
+    <img src="<%= asset.asset_url %>">
     <% elsif is_movie(asset.asset_url) %>
-      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" width="768" height="500" data-setup='{ "preload": "auto"; "controls": true }' preload="auto" controls="controls">
+      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto"; "controls": true }' preload="auto" controls="controls">
         <source src="<%= asset.asset_url %>" type="video/mp4">
       </video>
     <% else %>
-      <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+      <div class="row downloads">
+        <a href="<%= asset.asset_url %>" class="btn">Download</a> <%= File.basename asset.asset_url %> 
+      </div>
     <% end %>
   </div>
-  <div class="row asset field">
+  <div class="row asset field summary">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
     <div class="row actions">
       <%= link_to 'remove asset', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>

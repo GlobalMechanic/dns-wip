@@ -1,13 +1,17 @@
 <% if is_image(asset.asset_url) %>
   <img src="<%= asset.asset_url(:display) %>">
 <% elsif is_movie(asset.asset_url) %>
-  <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" width="768" height="500" data-setup='{ "preload": "auto" }' preload="auto">
-    <source src="<%= asset.asset_url %>" type="video/mp4">
-  </video>
+	<video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto"; "controls": true }' preload="auto" controls="controls">
+		<source src="<%= asset.asset_url %>" type="video/mp4">
+	</video>
 <% else %>
-  <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+	<div class="row asset-summary downloads">
+  		<a href="<%= asset.asset_url %>" class="btn">Download</a> <%= File.basename asset.asset_url %>
+	</div>
 <% end %>
 
-<div class="row entry-container">
-  <%= asset.description %>
+<% unless asset.description.blank? %>
+<div class="row asset-summary">
+  <p><%= asset.description %></p>
 </div>
+<% end %>
