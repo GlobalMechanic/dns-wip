@@ -19,9 +19,9 @@
 }
 
 /* Pages */
-img { width: 100% }
+img { max-width: 100% }
 .page-summary { margin: 1em; font-size: 13125em; line-height: 1.3em }
-@media screen and (min-width: 768px) { img { width: 48em } }
+@media screen and (min-width: 768px) { img { max-width: 48em } }
 .page-summary { 
 	margin: 1em; 
 	font-size: 1em; 
