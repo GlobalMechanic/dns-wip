@@ -11,16 +11,18 @@
     </div>
   <% end %>
 
-  <div class="row field">
+  <div class="row asset field">
     <% if is_image(asset.asset_url) %>
-      <img src="<%= asset.asset_url %>">
+    <img src="<%= asset.asset_url %>">
     <% elsif is_movie(asset.asset_url) %>
-      <video src="<%= asset.asset_url %>" controls>
+    <video src="<%= asset.asset_url %>" controls>
     <% else %>
-      <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+      <div class="row actions">
+        <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+      </div>
     <% end %>
   </div>
-  <div class="row asset field">
+  <div class="row asset field summary">
     <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
     <div class="row actions">
       <%= link_to 'remove asset', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>

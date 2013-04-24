@@ -37,3 +37,10 @@ input[type="checkbox"] { width: 2em; height: 2em }
 	input[type="password"],
 	textarea { width: 40.75em }
 }
+
+textarea[id="page-summary"],
+textarea[id="asset-summary"] { width: 94%; font-size: 1em; }
+@media screen and (min-width: 760px) {
+	textarea[id="page-summary"],
+	textarea[id="asset-summary"] { width: 35.4em }
+}

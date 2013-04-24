@@ -3,9 +3,11 @@
 <% elsif is_movie(asset.asset_url) %>
   <video src="<%= asset.asset_url %>" controls>
 <% else %>
-  <%= File.basename asset.asset_url %> <a href="<%= asset.asset_url %>" class="btn">Download</a>
+	<div class="row asset-summary downloads">
+  		<a href="<%= asset.asset_url %>" class="btn">Download</a> <%= File.basename asset.asset_url %>
+	</div>
 <% end %>
 
-<div class="row entry-container">
-  <%= asset.description %>
+<div class="row asset-summary">
+  <p><%= asset.description %></p>
 </div>
