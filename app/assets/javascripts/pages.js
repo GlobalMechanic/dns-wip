@@ -15,3 +15,10 @@ $(document).on('submit', '.edit_page, .edit_asset', function() {
   });
   return false;
 });
+
+// Make video 16:9
+$(window).bind("load orientationchange resize", function() {  
+    var videoWidth = $('body').find('#container').width();
+    var videoHeight = videoWidth * 9/16;
+    $('.video-js').css({ 'height': (videoHeight)+'px' });
+});
