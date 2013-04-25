@@ -15,7 +15,7 @@
     <% if is_image(asset.asset_url) %>
     <img src="<%= asset.asset_url %>">
     <% elsif is_movie(asset.asset_url) %>
-      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto"; "controls": true }' preload="auto" controls="controls">
+      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true }' preload="auto" controls="controls">
         <source src="<%= asset.asset_url %>" type="video/mp4">
       </video>
     <% else %>
