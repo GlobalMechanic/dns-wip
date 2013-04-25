@@ -4,14 +4,13 @@
 <div class="row content-list">
 <% @pages.each do |page| %>
 <article class="entry-header">
-  <h1 class="entry-title"><%= link_to !page.title.blank? ? page.title : "Untitled", page %> - <span title="<%= page.created_at %>"><%= time_ago_in_words(page.created_at) %></span></h1>
+  <h1 class="entry-title"><%= link_to !page.title.blank? ? page.title : "Untitled", page %> - <span title="<%= page.created_at %>"><%= time_ago_in_words(page.created_at) %> ago</span> - <%= link_to 'Delete', page, method: :delete, data: { confirm: 'Are you sure?' } %></h1>
   <p class="entry-summary"><%= page.description %></p>
   <p class="entry-preview">
     <% page.assets.select{|asset| is_image(asset.asset_url) }.each do |asset| %>
       <img src="<%= asset.asset_url(:thumb) %>" width="80" height="80">
     <% end %>
   </p>
-  <p class="entry-utilities"><%= link_to 'Edit', edit_page_path(page) %> or <%= link_to 'delete', page, method: :delete, data: { confirm: 'Are you sure?' } %> this page.</p>
 </article>
 <% end %>
 </div>
