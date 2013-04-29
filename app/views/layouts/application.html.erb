@@ -7,7 +7,16 @@
   <meta name="HandheldFriendly" content="true">
   <meta http-equiv="cleartype" content="on">
   <meta http-equiv="X-UA-Compatible" content="IE,edge, chrome=1">
+  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet"> 
+  <!--[if lt IE 9]
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  ![endif]-->
+  <!--[if IE]>
+  <%= stylesheet_link_tag "application-ie", :media => "all" %>
+  <![endif]-->
+  <!--[if !IE]><!-->
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <!--<![endif]-->
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,8 +26,7 @@
 	<p class="alert"><%= alert %></p> -->
 	<%= yield %>
 </div>
-<%= javascript_include_tag "application" %>
-<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/c/video.js"></script>
+<%= javascript_include_tag "application" %>
 </body>
 </html>

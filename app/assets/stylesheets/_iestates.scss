@@ -1,0 +1,85 @@
+a { 
+  color: $baseFontColor; 
+  &:hover { color: rgb(229,91,0) }
+}
+
+.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  margin-bottom: 1em; 
+  padding:0.6875em 0.625em 0.6em 0.625em;
+	color: $baseHighlight;
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+  text-shadow: 0 0 rgba(255, 255, 255, .75);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $baseFontColor;
+  border: 1px solid #000;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+a.btn { display: inline-block }
+div[id="container"] > .btn { margin-left: 1em; }
+.primary { 
+  display: inline-block;
+  float: right;
+  margin: 0.8em 1em 1em 0;
+  background: $baseFontColor;
+
+  .btn { 
+    margin-bottom: 0; 
+    font-size: 0.75em; 
+    font-weight: bold;
+    border: none; 
+  } 
+}
+.primary.forms { margin: 0.9em 1em 1em 0 }
+
+.field .actions { float: right; }
+.field .actions .btn { font-size: 0.875em }
+.field.downloads { 
+  position: relative; 
+  top: 0.5em;
+  width: 100%; 
+  padding: 0; 
+
+  .btn { margin: 0 0.7em 0 0.5em } 
+}
+
+.asset-summary.downloads { font-size: 1em }
+.asset-summary.downloads .btn { font-size: 1em; margin-left: 1em }
+
+//.utilities a { margin-right: 1em }
+
+.content-list {
+  h1 { 
+    margin-left: 0.85em;
+    padding-top: 1em;
+    font: 1.2em Transit;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    a { 
+      color: $baseFontColor; 
+      &:hover { color: rgb(229,91,0) !important } 
+    }
+  }
+  .entry-utilities a { 
+    color: darken($baseHighlight, 45%);
+    font-weight: bold;
+    &:hover { color: rgb(229,91,0) } 
+  }
+}
+
+a[id="top"] {
+  display: block;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  color: $secondaryFontColor;
+}

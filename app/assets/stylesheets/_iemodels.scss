@@ -12,7 +12,7 @@
 
 /* Content lists */
 .content-list {
-	.entry-header:nth-child(even) { background: $baseBG }
+	.entry-header:nth-child(even) { background: $baseBG } 
 	.entry-summary { margin-bottom: 1em }
 	.entry-utilities { margin: 0 1em; padding-bottom: 1em }
 	.entry-preview img { width: auto; }
@@ -21,40 +21,29 @@
 /* Assets */
 img, .video-js { max-width: 100% }
 .video-js { margin-bottom: 1.6em }
-//.vjs-tech { margin: 0 0 1em; padding: 0; background: rgb(15,15,15) }
 div.asset-summary + div.video-js { margin: 1.6em 0; }
 
 .downloads,
 .asset-summary.downloads { width: 100%; margin: 1em 0 0 0; padding: 1em 0 0.5em }
 
-.page-summary, .asset-summary { margin: 1em; font-size: 1.3125em; line-height: 1.3em }
-@media screen and (min-width: 768px) { 
-	img { max-width: 48em } 
-	.page-summary,
-	.asset-summary { 
-		margin: 1em; 
-		font-size: 1em; 
-		line-height: 1.5em
-	}
-}
+.page-summary, .asset-summary { margin: 1em; font-size: 1em; line-height: 1.5em }
 
 .asset-summary { 
 	margin: -1.5em 0 0.1em 0;
 	padding: 1em 0 1em 0;
 	background: $baseBG;
 
-	p { margin: 0 0.5em; padding: 0 }
+	p { margin: 0 1em; padding: 0 }
 }
-@media screen and (min-width: 768px) { .asset-summary p { margin: 0 1em } }
 
 .asset.field { margin: -0.5em 0 0 -1em; padding: 0 1em 0.1em; background: $baseBG }
 
 .field img { max-width: 104.4%; margin: 0 0 1em -1em }
-.field .vjs-tech { width: 100%; margin: 0 0 1em -30px; }
+.field .vjs-tech { width: 104.4%; margin: 0 0 1em -1.6em }
 .field .video-js { background: transparent }
 
 input[id="page-title"] { 
-	width: 96%;
+	width: 15.9em;
 	margin-bottom: 0.875em;
 	padding: 0.2em;
 	font-family: Clarendon;
@@ -64,8 +53,7 @@ input[id="page-title"] {
 	border: none;
 	border-bottom: 1px dashed $baseBorder 
 }
-@media screen and (min-width: 760px) { input[id="page-title"] { width: 15.9em } }
 
 .asset.summary textarea[id="asset-summary"] { float: left }
+textarea[id="asset-summary"] { width: 35.4em }
 textarea[id="asset-summary"], textarea[id="page-summary"] { width: 94%; font-size: 1em; font-family: Transit }
-@media screen and (min-width: 760px) { textarea[id="asset-summary"] { width: 35.4em } }

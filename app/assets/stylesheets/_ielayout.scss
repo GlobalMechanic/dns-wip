@@ -1,0 +1,20 @@
+div[id="container"] { width: 48em }
+
+h1 { clear: none; line-height: 1.3em; margin-left: 0.5em } 
+h2 { margin-left: 0.7em }
+h3, h4, h5, h6 { margin-left: 1em }
+
+p, form, nav, aside, section { margin-left: 1em; margin-right: 1em }
+
+article > video, article > img { margin: 1em 0 }
+
+form { margin: 1em 1em 2em }
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+textarea { width: 40.75em }
+input[type="checkbox"] { width: 2em; height: 2em }
+.checkbox-label { position: relative; top: -1.8em; left: 2em; width: 96%; }
+
+textarea[id="page-summary"],
+textarea[id="asset-summary"] { width: 35.4em; font-size: 1em; }

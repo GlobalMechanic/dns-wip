@@ -20,5 +20,6 @@ $(document).on('submit', '.edit_page, .edit_asset', function() {
 $(window).bind("load orientationchange resize", function() {  
     var videoWidth = $('body').find('#container').width();
     var videoHeight = videoWidth * 9/16;
-    $('.video-js').css({ 'width': videoWidth + 'px', 'height': videoHeight + 'px' });
+    $('.video-js, .vjs-tech').css({ 'width': videoWidth + 'px', 'height': videoHeight + 'px' });
+    //$('.field .video-js, .field .vjs-tech').css({ 'width': videoWidth + 'px', 'height': ((videoHeight)-16) + 'px' });
 });
