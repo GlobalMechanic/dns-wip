@@ -27,6 +27,11 @@
 	<%= yield %>
 </div>
 <script src="http://vjs.zencdn.net/c/video.js"></script>
+<!--[if lte IE 9]>
+<script type="text/javascript">
+_V_.options.techOrder = ["flash","html5"];
+</script>
+<![endif]-->
 <%= javascript_include_tag "application" %>
 </body>
 </html>
