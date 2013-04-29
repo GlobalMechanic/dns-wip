@@ -12,7 +12,12 @@ $('#new_asset').fileupload({
     }
   },
   done: function (e, data) {
-    data.context.replaceWith(data.result.template)
+    var template = $.parseHTML(data.result.template);
+    data.context.replaceWith(template);
+    _V_($(template).find('.video-js').attr('id'));
+    var videoWidth = $('body').find('#container').width();
+    var videoHeight = videoWidth * 9/16;
+    $(template).find('.video-js, .vjs-tech').css({ 'width': videoWidth + 'px', 'height': videoHeight + 'px' });
   },
   fail: function(e, data, three) {
     data.context.find('.progress').remove()
