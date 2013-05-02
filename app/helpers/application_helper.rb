@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def is_movie(asset)
-    %w(mov mp4).include?(clean_extension(asset))
+    %w(mov mp4 m4v mpg).include?(clean_extension(asset))
   end
 
   def clean_extension(filename)
