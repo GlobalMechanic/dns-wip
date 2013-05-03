@@ -21,6 +21,7 @@
 /* Assets */
 img, .video-js { max-width: 100% }
 .video-js { margin-bottom: 1.6em }
+
 div.asset-summary + div.video-js { margin: 1.6em 0; }
 
 .downloads,
@@ -33,7 +34,7 @@ div.asset-summary + div.video-js { margin: 1.6em 0; }
 	padding: 1em 0 1em 0;
 	background: $baseBG;
 
-	p { margin: 0 1em; padding: 0 }
+	.text { margin: 0 1em; padding: 0 }
 }
 
 .asset.field { margin: -0.5em 0 0 -1em; padding: 0 1em 0.1em; background: $baseBG }
