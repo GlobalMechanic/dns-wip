@@ -1,24 +1,30 @@
-<% if is_image(asset.asset_url) %>
-  <div>
+<div class="asset">
+  <% if is_image(asset.asset_url) %>
     <img src="<%= asset.asset_url(:display) %>">
-  </div>
-<% elsif is_movie(asset.asset_url) %>
-  <!--[if IE]>
-  <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true, "techOrder": ["flash", "html5"] }' preload="auto" controls="controls">
-  <![endif]-->
-  <!--[if !IE]> -->
-  <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true }' preload="auto" controls="controls">
-  <!-- <![endif]-->
-		<source src="<%= asset.asset_url %>" type="video/mp4">
-	</video>
-<% else %>
-	<div class="row asset-summary downloads">
-		<a href="<%= asset.asset_url %>" class="btn">Download</a> <%= File.basename asset.asset_url %>
-	</div>
-<% end %>
+  <% elsif is_movie(asset.asset_url) %>
+    <!--[if IE]>
+    <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true, "techOrder": ["flash", "html5"] }' preload="auto" controls="controls">
+    <![endif]-->
+    <!--[if !IE]> -->
+    <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true }' preload="auto" controls="controls">
+    <!-- <![endif]-->
+      <source src="<%= asset.asset_url %>" type="video/mp4">
+    </video>
+  <% else %>
+    <% download = true %>
+  <% end %>
 
-<% unless asset.description.blank? %>
-<div class="row asset-summary">
-  <div class="text"><%= raw(asset.description) %></div>
+  <div class="meta clearfix">
+    <div class="actions">
+      <%= link_to 'Download', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
+    </div>
+    <div class="description">
+      <% if download == true %>
+        <div class="filename"><%= File.basename asset.asset_url %></div>
+      <% end %>
+      <% unless asset.description.blank? %>
+        <div class="text"><%= raw(asset.description) %></div>
+      <% end %>
+    </div>
+  </div>
 </div>
-<% end %>

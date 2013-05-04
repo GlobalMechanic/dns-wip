@@ -19,10 +19,14 @@
 }
 
 /* Assets */
+img { display: block; }
 img, .video-js { max-width: 100% }
-.video-js { margin-bottom: 1.6em }
-//.vjs-tech { margin: 0 0 1em; padding: 0; background: rgb(15,15,15) }
+.video-js { }
 div.asset-summary + div.video-js { margin: 1.6em 0; }
+
+.field img { max-width: 104.4%; margin: 0 0 1em -1em }
+.field .vjs-tech { width: 100%; margin: 0 0 1em -30px; }
+.field .video-js { background: transparent }
 
 .downloads,
 .asset-summary.downloads { width: 100%; margin: 1em 0 0 0; padding: 1em 0 0.5em }
@@ -39,7 +43,7 @@ div.asset-summary + div.video-js { margin: 1.6em 0; }
 }
 
 .asset-summary { 
-	margin: -1.5em 0 0.1em 0;
+	margin: 0em 0 1em 0;
 	padding: 1em 0 1em 0;
 	background: $baseBG;
 
@@ -51,11 +55,11 @@ div.asset-summary + div.video-js { margin: 1.6em 0; }
 	.asset-summary .text { margin: 1.5em 0 0.5em 1em }
 }
 
-.asset.field { margin: -0.5em 0 0 -1em; padding: 0 1em 0.1em; background: $baseBG }
-
-.field img { max-width: 104.4%; margin: 0 0 1em -1em }
-.field .vjs-tech { width: 100%; margin: 0 0 1em -30px; }
-.field .video-js { background: transparent }
+/*.asset.field {
+	margin: -0.5em 0 0 -1em;
+	padding: 0 1em 0.1em;
+	background: $baseBG;
+}*/
 
 input[id="page-title"] { 
 	width: 96%;
@@ -70,6 +74,48 @@ input[id="page-title"] {
 }
 @media screen and (min-width: 760px) { input[id="page-title"] { width: 15.9em } }
 
-.asset.summary textarea[id="asset-summary"] { float: left }
-textarea[id="asset-summary"], textarea[id="page-summary"] { width: 94%; font-size: 1em; font-family: Transit }
-@media screen and (min-width: 760px) { textarea[id="asset-summary"] { width: 35.4em } }
+// .asset.summary textarea[id="asset-summary"] { float: left }
+//textarea[id="asset-summary"], textarea[id="page-summary"] { width: 94%; font-size: 1em; font-family: Transit }
+//@media screen and (min-width: 760px) { textarea[id="asset-summary"] { width: 35.4em } }
+
+
+.asset {
+	background: $baseBG;
+	margin: 1.5em 0;
+
+	img {
+		display: block;
+	}
+	.filename {
+		margin-top: 2px;
+		font-size: 1.9em;
+	}
+	.meta {
+		padding: 1em;
+	}
+	.description {
+		margin-right: 138px;
+	}
+	textarea, .text {
+	}
+	textarea {
+		width: 100%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.text {
+		/*margin-top: 0.5em;*/
+	}
+	.actions {
+		float: right;
+		.btn {
+			display: block;
+			width: 100px;
+			margin-bottom: 0;
+		}
+		.btn.remove { margin-bottom: 1em; }
+	}
+
+}
+

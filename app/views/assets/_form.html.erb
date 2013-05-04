@@ -1,4 +1,4 @@
-<%= form_for asset, :html => {:multipart => true} do |f| %>
+<%= form_for asset, :html => { :multipart => true, :class => 'edit_asset asset' } do |f| %>
   <% if asset.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(asset.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,28 +11,31 @@
     </div>
   <% end %>
 
-  <div class="row asset field">
-    <% if is_image(asset.asset_url) %>
-    <img src="<%= asset.asset_url %>">
-    <% elsif is_movie(asset.asset_url) %>
-      <!--[if IE]>
-      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true, "techOrder": ["flash", "html5"] }' preload="auto" controls="controls">
-      <![endif]-->
-      <!--[if !IE]> -->
-      <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true }' preload="auto" controls="controls">
-      <!-- <![endif]-->
-        <source src="<%= asset.asset_url %>" type="video/mp4">
-      </video>
-    <% else %>
-      <div class="row downloads">
-        <a href="<%= asset.asset_url %>" class="btn">Download</a> <%= File.basename asset.asset_url %> 
-      </div>
-    <% end %>
-  </div>
-  <div class="row asset field summary">
-    <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
-    <div class="row actions">
-      <%= link_to 'remove asset', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
+  <% if is_image(asset.asset_url) %>
+    <img src="<%= asset.asset_url(:display) %>">
+  <% elsif is_movie(asset.asset_url) %>
+    <!--[if IE]>
+    <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true, "techOrder": ["flash", "html5"] }' preload="auto" controls="controls">
+    <![endif]-->
+    <!--[if !IE]> -->
+    <video id="asset-<%= asset.id %>" class="video-js vjs-default-skin preview" data-setup='{ "preload": "auto", "controls": true }' preload="auto" controls="controls">
+    <!-- <![endif]-->
+      <source src="<%= asset.asset_url %>" type="video/mp4">
+    </video>
+  <% else %>
+    <% download = true %>
+  <% end %>
+
+  <div class="meta clearfix">
+    <div class="actions">
+      <%= link_to 'Remove', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn remove' %>
+      <%= link_to 'Download', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
+    </div>
+    <div class="description">
+      <% if download == true %>
+        <h3><%= File.basename asset.asset_url %></h3>
+      <% end %>
+      <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
     </div>
   </div>
 <% end %>
