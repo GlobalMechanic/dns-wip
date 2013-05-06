@@ -12,9 +12,11 @@
   <!--[if lt IE 9]
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   ![endif]-->
-  <!--[if IE]>
+
+  <!--[if lt IE 9]>
   <%= stylesheet_link_tag "application-ie", :media => "all" %>
   <![endif]-->
+  
   <!--[if !IE]><!-->
   <%= stylesheet_link_tag "application", :media => "all" %>
   <!--<![endif]-->

@@ -28,12 +28,12 @@
 
   <div class="meta clearfix">
     <div class="actions">
-      <%= link_to 'Remove', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn remove' %>
       <%= link_to 'Download', asset_download_path(asset), :class => 'btn' %>
+      <%= link_to 'Remove', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn remove' %>
     </div>
     <div class="description">
       <% if download == true %>
-        <h3><%= File.basename asset.asset_url %></h3>
+        <div class="filename"><%= File.basename asset.asset_url %></div>
       <% end %>
       <%= f.text_area :description, :placeholder => 'Add a brief summary for the asset', :id => 'asset-summary' %>
     </div>

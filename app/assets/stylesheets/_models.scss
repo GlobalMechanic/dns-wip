@@ -15,7 +15,7 @@
 	.entry-header:nth-child(even) { background: $baseBG }
 	.entry-summary { margin-bottom: 1em }
 	.entry-utilities { margin: 0 1em; padding-bottom: 1em }
-	.entry-preview img { width: auto; }
+	.entry-preview img { width: auto; display: inline; }
 }
 
 /* Assets */
@@ -114,7 +114,7 @@ input[id="page-title"] {
 			width: 100px;
 			margin-bottom: 0;
 		}
-		.btn.remove { margin-bottom: 1em; }
+		.btn.remove { margin-top: 1em; }
 	}
 
 }
