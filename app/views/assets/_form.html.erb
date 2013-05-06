@@ -29,7 +29,7 @@
   <div class="meta clearfix">
     <div class="actions">
       <%= link_to 'Remove', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn remove' %>
-      <%= link_to 'Download', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
+      <%= link_to 'Download', asset_download_path(asset), :class => 'btn' %>
     </div>
     <div class="description">
       <% if download == true %>

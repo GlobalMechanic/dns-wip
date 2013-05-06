@@ -2,7 +2,9 @@ Wip::Application.routes.draw do
 
   devise_for :users
 
-  resources :assets
+  resources :assets do
+    get 'download'
+  end
   resources :pages, :path => '/'
   root :to => "pages#index"
 

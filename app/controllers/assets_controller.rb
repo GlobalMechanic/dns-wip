@@ -1,5 +1,5 @@
 class AssetsController < ApplicationController
-	before_filter :authenticate_user!
+	before_filter :authenticate_user!, :except => [:download]
 
 	# GET /assets
 	# GET /assets.json
@@ -84,6 +84,23 @@ class AssetsController < ApplicationController
 		respond_to do |format|
 			format.html { redirect_to @asset.page }
 			format.json { head :no_content }
+		end
+	end
+
+	# GET /assets/1/download
+	def download
+		@asset = Asset.find(params[:asset_id])
+
+		if !ENV['S3_KEY'] || !ENV['S3_SECRET'] || !ENV['S3_BUCKET_NAME']
+			send_file File.join(Rails.root, 'public', @asset.asset_url), :filename => File.basename(@asset.asset_url).to_s
+		else
+			open('https://s3.amazonaws.com/' + ENV['S3_BUCKET_NAME'] + '/uploads/asset/asset/' + @asset.id.to_s + '/' + File.basename(@asset.asset_url).to_s) {|file|
+				tmpfile = Tempfile.new(File.basename(@asset.asset_url).to_s)
+				File.open(tmpfile.path, 'wb') do |f|
+					f.write file.read
+				end
+				send_file tmpfile.path, :filename => File.basename(@asset.asset_url).to_s
+			}
 		end
 	end
 end
