@@ -16,6 +16,25 @@ $(document).on('submit', '.edit_page, .edit_asset', function() {
   return false;
 });
 
+$('.edit_asset .up, .edit_asset .down').click(function() {
+  var $asset = $(this).parents('.edit_asset');
+  $asset.removeClass('active').addClass('active');
+  if ($(this).hasClass('up')) {
+    var $prev = $asset.prev('.edit_asset');
+    $('html,body').animate({scrollTop: $(document).scrollTop() - $prev.height() }, 250);
+    $asset.insertBefore($prev);
+  }
+  else if ($(this).hasClass('down')) {
+    var $next = $asset.next('.edit_asset');
+    $('html,body').animate({scrollTop: $(document).scrollTop() + $next.height() }, 250);
+    $asset.insertAfter($next);
+  }
+  $('.edit_asset').each(function(index, asset) {
+    $(asset).find('[name="asset[order]"]').val(index);
+    $(asset).submit();
+  });
+});
+
 // Make video 16:9
 $(window).bind("load orientationchange resize", function() {  
     var videoWidth = $('body').find('#container').width();

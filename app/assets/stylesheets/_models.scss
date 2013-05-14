@@ -114,8 +114,31 @@ input[id="page-title"] {
 			width: 100px;
 			margin-bottom: 0;
 		}
+		.btn.direction {
+			margin-bottom: 1em;
+			.up, .down {
+				float: left;
+				width: 50px;
+				text-align: center;
+				text-indent: -9999px;
+				background: url(down.png) center center no-repeat;
+			}
+			.up {
+				width: 49px;
+				border-right: 1px solid white;
+				background-image: url(up.png);
+			}
+		}
+
 		.btn.remove { margin-top: 1em; }
 	}
-
+	&.active {
+		-webkit-animation: 1s changed;
+	}
 }
 
+@-webkit-keyframes changed {
+	0%   { background-color: $baseBG; }
+	50%  { background-color: #ffffaa; }
+	100% { background-color: $baseBG; }
+}
