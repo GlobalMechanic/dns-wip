@@ -32,7 +32,7 @@
         <div class="up">Up</div>
         <div class="down">Down</div>
       </div>
-      <%= link_to 'Download', asset_download_path(asset), :class => 'btn' %>
+      <%= link_to 'Download', asset.asset_url, :class => 'btn' %>
       <%= link_to 'Remove', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn remove' %>
     </div>
     <div class="description">
