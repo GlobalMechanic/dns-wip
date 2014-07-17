@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1862462997">
+    <data-source source="LOCAL" name="Rails dns-wip: development" uuid="e6f2160e-1d08-4213-9238-0dde8ed85dd2">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wip_development</jdbc-url>
+      <user-name>wip</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails dns-wip: test" uuid="a2b8f281-0f41-4fa4-8ccf-451743ef5744">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wip_test</jdbc-url>
+      <user-name>wip</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails dns-wip: production" uuid="43a83c5d-aa23-4548-a13f-ac1b1ed126e9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wip_production</jdbc-url>
+      <user-name>wip</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
