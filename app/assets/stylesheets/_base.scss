@@ -1,18 +1,19 @@
 /* -------
 Fonts
 ------- */
+
 @font-face {
   font-family: Transit;
-  src: url("transit/TransitWebPro.eot?") format('eot'), url("transit/TransitWebPro.woff") format("woff");
+  src: url("gothamNarrowBook/GothamNarrow-Book.eot?") format('eot'), url("gothamNarrowBook/GothamNarrow-Book.woff") format("woff");
 }
 @font-face {
   font-family: Clarendon;
-  src: url("clarendon/c070002tWeb.eot?") format('eot'), url("clarendon/c070002tWeb.woff") format("woff");
+  src: url("gothamNarrowBold/GothamNarrow-Bold.eot?") format('eot'), url("gothamNarrowBold/GothamNarrow-Bold.woff") format("woff");
 }
 @font-face {
   font-family: Clarendon;
   font-weight: bold;
-  src: url("clarendon/c070004tWeb.eot?") format('eot'), url("clarendon/c070004tWeb.woff") format("woff");
+  src: url("gothamNarrowBold/GothamNarrow-Bold.eot?") format('eot'), url("gothamNarrowBold/GothamNarrow-Bold.woff") format("woff");
 }
 
 /* -------
@@ -54,7 +55,7 @@ $baseFontColor: rgb(55,43,45);
 $secondaryFontColor: rgb(70,64,58);
 $baseHighlight: rgb(230,223,223);
 $baseBorder: rgb(168,164,158);
-$baseBG: rgb(236,237,235);
+$baseBG: rgb(163,147,125);
 
 /* -------
 Clear, rows, and containers
