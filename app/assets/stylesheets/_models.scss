@@ -5,7 +5,7 @@
 	width: 186px;
 	height: 90px;
 	text-indent: -9999em;
-	background: image-url('logo_commercial_NUT_2010.png') top left no-repeat
+	background: image-url('logo.png') top left no-repeat
 }
 
 #new_asset { display: none; }
@@ -32,17 +32,17 @@ div.asset-summary + div.video-js { margin: 1.6em 0; }
 .asset-summary.downloads { width: 100%; margin: 1em 0 0 0; padding: 1em 0 0.5em }
 
 .page-summary, .asset-summary { margin: 1em; font-size: 1.3125em; line-height: 1.3em }
-@media screen and (min-width: 768px) { 
-	img { max-width: 48em } 
+@media screen and (min-width: 768px) {
+	img { max-width: 48em }
 	.page-summary,
-	.asset-summary { 
-		margin: 1em; 
-		font-size: 1em; 
+	.asset-summary {
+		margin: 1em;
+		font-size: 1em;
 		line-height: 1.5em
 	}
 }
 
-.asset-summary { 
+.asset-summary {
 	margin: 0em 0 1em 0;
 	padding: 1em 0 1em 0;
 	background: $baseBG;
@@ -61,23 +61,18 @@ div.asset-summary + div.video-js { margin: 1.6em 0; }
 	background: $baseBG;
 }*/
 
-input[id="page-title"] { 
+input[id="page-title"] {
 	width: 96%;
 	margin-bottom: 0.875em;
 	padding: 0.2em;
 	font-family: Clarendon;
 	font-weight: bold;
-	font-size: 2.25em; 
+	font-size: 2.25em;
 	line-height: 1.3em;
 	border: none;
-	border-bottom: 1px dashed $baseBorder 
+	border-bottom: 1px dashed $baseBorder
 }
 @media screen and (min-width: 760px) { input[id="page-title"] { width: 15.9em } }
-
-// .asset.summary textarea[id="asset-summary"] { float: left }
-//textarea[id="asset-summary"], textarea[id="page-summary"] { width: 94%; font-size: 1em; font-family: Transit }
-//@media screen and (min-width: 760px) { textarea[id="asset-summary"] { width: 35.4em } }
-
 
 .asset {
 	background: $baseBG;

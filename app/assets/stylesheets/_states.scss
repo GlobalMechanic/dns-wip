@@ -1,5 +1,5 @@
-a { 
-  color: $baseFontColor; 
+a {
+  color: $baseFontColor;
   &:hover { color: rgb(229,91,0) }
 }
 
@@ -7,7 +7,7 @@ a {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   padding:0.6875em 0.625em 0.6em 0.625em;
 	color: $baseHighlight;
   font-family: inherit;
@@ -25,30 +25,30 @@ input[type="button"] {
 }
 a.btn { display: inline-block }
 div[id="container"] > .btn { margin-left: 1em; }
-.primary { 
+.primary {
   display: inline-block;
   float: right;
   margin: 0.8em 1em 1em 0;
   background: $baseFontColor;
 
-  .btn { 
-    margin-bottom: 0; 
-    font-size: 0.75em; 
+  .btn {
+    margin-bottom: 0;
+    font-size: 0.75em;
     font-weight: bold;
-    border: none; 
-  } 
+    border: none;
+  }
 }
 .primary.forms { margin: 0.9em 1em 1em 0 }
 
 .field .actions { float: right; }
 .field .actions .btn { font-size: 0.875em }
-.field.downloads { 
-  position: relative; 
+.field.downloads {
+  position: relative;
   top: 0.5em;
-  width: 100%; 
-  padding: 0; 
+  width: 100%;
+  padding: 0;
 
-  .btn { margin: 0 0.7em 0 0.5em } 
+  .btn { margin: 0 0.7em 0 0.5em }
 }
 
 .asset-summary.downloads { font-size: 1em }
@@ -58,22 +58,22 @@ div[id="container"] > .btn { margin-left: 1em; }
 //.utilities a { margin-right: 1em }
 
 .content-list {
-  h1 { 
+  h1 {
     margin-left: 0.85em;
     padding-top: 1em;
-    font: 1.2em Transit;
+    font: 1.2em $body-font;
     font-weight: bold;
     text-transform: uppercase;
 
-    a { 
-      color: $baseFontColor; 
-      &:hover { color: rgb(229,91,0) !important } 
+    a {
+      color: $baseFontColor;
+      &:hover { color: rgb(229,91,0) !important }
     }
   }
-  .entry-utilities a { 
+  .entry-utilities a {
     color: darken($baseHighlight, 45%);
     font-weight: bold;
-    &:hover { color: rgb(229,91,0) } 
+    &:hover { color: rgb(229,91,0) }
   }
 }
 

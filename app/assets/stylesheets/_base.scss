@@ -3,29 +3,36 @@ Fonts
 ------- */
 
 @font-face {
-  font-family: Transit;
-  src: url("gothamNarrowBook/GothamNarrow-Book.eot?") format('eot'), url("gothamNarrowBook/GothamNarrow-Book.woff") format("woff");
+  font-family: 'Bebas-Neue-Regular';
+  src: url('../assets/bebasneue-webfont.woff2') format('woff2'),
+       url('../assets/bebasneue-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: Clarendon;
-  src: url("gothamNarrowBold/GothamNarrow-Bold.eot?") format('eot'), url("gothamNarrowBold/GothamNarrow-Bold.woff") format("woff");
+	font-family: 'AvenirNext LT Pro';
+	src: url('../assets/AvenirNextLTPro-Light.eot');
+	src: url('../assets/AvenirNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../assets/AvenirNextLTPro-Light.woff') format('woff'),
+		url('../assets/AvenirNextLTPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
-@font-face {
-  font-family: Clarendon;
-  font-weight: bold;
-  src: url("gothamNarrowBold/GothamNarrow-Bold.eot?") format('eot'), url("gothamNarrowBold/GothamNarrow-Bold.woff") format("woff");
-}
+
+$title-font: 'Bebas-Neue-Regular';
+$body-font: 'AvenirNext LT Pro';
 
 /* -------
 Resets (pulled from Skeleton, inspired by Eric Meyer)
 ------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, 
-sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, 
-header, hgroup, menu, nav, output, ruby, section, summary, time, mark, 
+article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark,
 audio, video {
 	margin: 0;
 	padding: 0;
@@ -35,7 +42,7 @@ audio, video {
 	vertical-align: baseline
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, 
+article, aside, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section { display: block }
 
 body { line-height: 1 }
@@ -44,18 +51,18 @@ ol, ul { list-style: none }
 
 blockquote, q { quotes: none }
 
-blockquote:before, 
+blockquote:before,
 blockquote:after,
-q:before, 
+q:before,
 q:after { content: ''; content: none }
-	
+
 table { border-collapse: collapse; border-spacing: 0 }
 
-$baseFontColor: rgb(55,43,45);
-$secondaryFontColor: rgb(70,64,58);
-$baseHighlight: rgb(230,223,223);
-$baseBorder: rgb(168,164,158);
-$baseBG: rgb(163,147,125);
+$baseFontColor: rgb(0,0,0);
+$secondaryFontColor: rgb(0,0,0);
+$baseHighlight: rgb(0,0,0);
+$baseBorder: rgb(0,0,0);
+$baseBG: rgb(255,255,255);
 
 /* -------
 Clear, rows, and containers
@@ -68,10 +75,10 @@ Clear, rows, and containers
 .clearfix:after,
 .row:before,
 .row:after { content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0 }
-    
+
 .row:after,
 .clearfix:after { clear:both }
-    
+
 .row,
 .clearfix { zoom:1 }
 
@@ -81,14 +88,14 @@ Clear, rows, and containers
 /* -------
 Typography
 ------- */
-body { 
-	font: 100%/1.5 Transit, sans-serif; 
-	color: $baseFontColor; 
+body {
+	font: 100%/1.5 $body-font, sans-serif;
+	color: $baseFontColor;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: Clarendon; font-weight: bold; color: $baseFontColor; }
+h1, h2, h3, h4, h5, h6 { font-family: $title-font; font-weight: bold; color: $baseFontColor; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit }
 
 h1 { font-size: 2.25em; line-height: 1.3em; margin-bottom: 0.875em }
@@ -132,8 +139,8 @@ select {
 	margin: 0 0 1.25em 0;
 	padding:0.6875em 0.625em 0.625em 0.625em;
 	font-size: 0.875em;
-	border: 1px solid $baseBorder; 
-	background: rgb(255,255,255) 
+	border: 1px solid $baseBorder;
+	background: rgb(255,255,255)
 }
 select { width: 13.75em }
 

@@ -16,10 +16,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/down-a88d013f84edd648cee0a2414f45c371.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/loading-b7ff30d20adcf2b850f420d17048930c.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo_commercial_NUT_2010-8dd6345a664806608246aecd6e13d6b7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo-8dd6345a664806608246aecd6e13d6b7.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/progressbar-bc538af0ba6ff3d792217a96651cd58a.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/up-8d5488dea2490834ac08d75af3c6831d.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/logo_commercial_NUT_2010.png" afterPath="$PROJECT_DIR$/public/assets/logo_commercial_NUT_2010.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/logo.png" afterPath="$PROJECT_DIR$/public/assets/logo.png" />
     </list>
     <ignored path="dns-wip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -418,7 +418,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/logo_commercial_NUT_2010.png">
+    <entry file="file://$PROJECT_DIR$/public/assets/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
