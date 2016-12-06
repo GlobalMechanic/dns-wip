@@ -34,7 +34,6 @@ div[id="container"] > .btn { margin-left: 1em; }
   .btn {
     margin-bottom: 0;
     font-size: 0.75em;
-    font-weight: bold;
     border: none;
   }
 }
@@ -62,7 +61,6 @@ div[id="container"] > .btn { margin-left: 1em; }
     margin-left: 0.85em;
     padding-top: 1em;
     font: 1.2em $body-font;
-    font-weight: bold;
     text-transform: uppercase;
 
     a {
@@ -72,7 +70,6 @@ div[id="container"] > .btn { margin-left: 1em; }
   }
   .entry-utilities a {
     color: darken($baseHighlight, 45%);
-    font-weight: bold;
     &:hover { color: $textHoverColor }
   }
 }
