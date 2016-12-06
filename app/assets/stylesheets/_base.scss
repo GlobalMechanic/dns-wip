@@ -58,11 +58,11 @@ q:after { content: ''; content: none }
 
 table { border-collapse: collapse; border-spacing: 0 }
 
-$baseFontColor: rgb(0,0,0);
-$secondaryFontColor: rgb(0,0,0);
-$baseHighlight: rgb(0,0,0);
-$baseBorder: rgb(0,0,0);
-$baseBG: rgb(255,255,255);
+$baseFontColor: black;
+$secondaryFontColor: #aaa;
+$baseHighlight: black;
+$baseBorder: black;
+$baseBG: white;
 
 /* -------
 Clear, rows, and containers
