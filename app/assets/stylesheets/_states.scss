@@ -1,6 +1,6 @@
 a {
   color: $baseFontColor;
-  &:hover { color: rgb(229,91,0) }
+  &:hover { color: $textHoverColor }
 }
 
 .btn,
@@ -67,13 +67,13 @@ div[id="container"] > .btn { margin-left: 1em; }
 
     a {
       color: $baseFontColor;
-      &:hover { color: rgb(229,91,0) !important }
+      &:hover { color: $textHoverColor !important }
     }
   }
   .entry-utilities a {
     color: darken($baseHighlight, 45%);
     font-weight: bold;
-    &:hover { color: rgb(229,91,0) }
+    &:hover { color: $textHoverColor }
   }
 }
 
