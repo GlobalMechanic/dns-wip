@@ -4,18 +4,18 @@ Fonts
 
 @font-face {
   font-family: 'Bebas-Neue-Regular';
-  src: url('../assets/bebasneue-webfont.woff2') format('woff2'),
-       url('../assets/bebasneue-webfont.woff') format('woff');
+  src: url('bebasneue-webfont.woff2') format('woff2'),
+       url('bebasneue-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirNext LT Pro';
-	src: url('../assets/AvenirNextLTPro-Light.eot');
-	src: url('../assets/AvenirNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
-		url('../assets/AvenirNextLTPro-Light.woff') format('woff'),
-		url('../assets/AvenirNextLTPro-Light.ttf') format('truetype');
+	src: url('AvenirNextLTPro-Light.eot');
+	src: url('AvenirNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextLTPro-Light.woff') format('woff'),
+		url('AvenirNextLTPro-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
